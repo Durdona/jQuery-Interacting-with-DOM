@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Interacting with DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<header role="banner">
+  <h1>jQuery Fundamentals</h1>
+  <h2>Introduction to jQuery Selectors</h2>
+  <nav role="navigation">
+    <ul>
+      <li><a class="span" href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>
+      <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>
+      <li><a href="structure.htm" title="Structuring pages">Structuring pages</a></li>
+      <li><a href="links.htm" title="Creating links">Creating links</a></li>
+      <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>
+      <li><a href="next.htm" title="Next steps">Next steps</a></li>
+    </ul>
+    <p>This is a simple paragraph text </p>
+  </nav>
+</header>
+  <h2 id="h2Tag">Header with ID </h2>
+  
+      <p>Lorem ipsum dolor sit amet, per dolorem convenire ad, atomorum electram patrioque ei sit. Eu vel soleat tempor, pri ornatus phaedrum cu. Nam graeco dolorum constituto in. Usu ut stet ullum everti. Vis te modo consequat, justo simul virtute ne qui.
+
+		<span class='wrap'>Span 1</span>
+
+		<span class='wrap'>Span 2</span>
+
+		<span class='wrap'>Span 3</span>
+
+		Tale autem pri no. An mel debet cetero scripta. Mel an audiam insolens ullamcorper, et pro prompta alterum accusam, et cum utinam facilis consequat. Dicta nemore corpora an mei, no mea illud reprehendunt. Modo congue urbanitas ut vim. </p>
+
+		<div id="parentWrapper"></div>
+   <div title="Tables">
+   	<table id="DataTable" border="2px" width="420px">
+	   		<th title="header">ATTRIBUTE</th>
+			<th title="header">VALUE</th>
+			<th title="">DESCRIPTION</th>
+
+	   	<tr title="row">
+	   		<td>Cell 1 Row</td>
+	   	</tr>
+
+	   	<tr title="row2">
+	   		<td>Cell 1 Row 2</td>
+	   	</tr>
+
+	   	<tr title="row">
+	   		<td>Cell Row 3</td>
+	   	</tr>
+
+	   	<tr>
+	   		<td>
+	   			<table style="width: 100%" border="2px">
+	   				<tr>
+	   					<td>Nested Table Cell and Row</td>
+	   				</tr>
+	   			</table>
+	   		</td>
+	   	</tr>	   		
+   	</table>
+
+   		<div id="OutputDiv"></div>
+
+   	<div id="formBox">
+		<p>
+			<tr>
+		   	<td>First Name</td>
+		   	<td style="width: 70%;"><input id="FirstNameTextBox" value="John" type="text"></td>
+		   	</tr>  
+	   	</p> 
+		
+		<p>
+		   	<tr>
+		   	<td>Last Name</td>
+		   	<td><input id="LastNameTextBox" type="text"></td>
+		   	</tr>
+		</p>
+
+	   	<p>
+	   		<tr>
+	   		<td>Comments</td>
+	   		<td><textarea rows="5" cols="60" id="CommentsTextBox">TextArea</textarea></td>
+	   		</tr>
+	   	</p>
+   	</div>	
+
+   	<tr>
+   		<td><button id="left">&laquo;</button></td>
+   		<td><button id="right">&raquo;</button></td>
+   	</tr>
+
+   	<td>
+   		<select id="sel">
+   			<option value="AZ">AZ</option>
+   			<option value="CA" selected="true">CA</option>
+   		</select>
+   	</td>
+
+   </div>
+
+   <form>
+		<p>
+			<label for="usernam">Username:</label>
+			<input type="text" name="username" placeholder="username">
+		</p>
+
+		<p>
+			<label for="password">Password:</label>
+			<input id="password" type="password" name="password" placeholder="password min 8 characters">
+			<span>Enter a password here</span>
+		</p>
+
+		<p>
+			<label for="confirm_password">Confirm Password</label>
+			<input type="password" name="confirm_password">
+			<span>Confirm your password here</span>
+		</p>
+	</form>
+
+</br>
+<div>
+	<p>Tale autem pri no. An mel debet cetero scripta. Mel an audiam insolens ullamcorper, et pro prompta alterum accusam, et cum utinam facilis consequat. Dicta nemore corpora an mei, no mea illud reprehendunt. Modo congue urbanitas ut Tale autem pri no. An mel debet cetero scripta. Mel an audiam insolens ullamcorper, et pro prompta alterum accusam, et cum utinam facilis consequat. Dicta nemore corpora an mei, no mea illud reprehendunt. Modo congue urbanitas ut </p>
+
+	<p>
+		Tale autem pri no. An mel debet cetero scripta. Mel an audiam insolens ullamcorper, et pro prompta alterum sample accusam, et cum utinam facilis consequat. Dicta nemore corpora an mei, no mea illud reprehendunt. Modo congue urbanitas ut 
+	</p>
+
+</div>
+
+
+<p>If you do not specify a border for the table, it will be displayed without borders. A border can be added using the border attribute: </p>
+		<table id="tableBelow" border="1" style="width:100%">
+		  <tr>
+		    <td>Jill</td>
+		    <td>Smith</td>		
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>Jackson</td>		
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		    <td>John</td>
+		    <td>Doe</td>		
+		    <td>80</td>
+		  </tr>
+		</table>
+
+<br>
+<form>
+	<input type="button" value="Holidays of US" />
+	<input type="button" value="Holidays - National" />
+	<input type="button" value="Holidays - local" />
+</form>
+
+
+<script type="text/javascript"
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+window.jQuery||document.write('<script src="jquery_min.js"><\/script>');
+</script>
+
+<!-- <script type="text/javascript" src="jquery.js"></script> -->
+
+<script type="text/javascript" src="testJquery.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
