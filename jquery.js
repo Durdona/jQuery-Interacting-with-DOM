@@ -261,6 +261,57 @@ $(document).ready(function(){
 });
 
 
+/*************************** MODIFYING CLASSES ********************/
+// The four methods for working with CSS Class attributes make super easy to change the DOM 
+// 1. 
+	.addClass()  // adds one or more class names to the class attribute of each matched element: 
+		$('p').addClass('classOne');
+	// More than one class:
+		$('p').addClass('classOne classTwo');
+	// Example: 
+	$(document).ready(function(){
+		$('input[type="text"]').addClass('Highlight');
+	});
+
+// 2.
+	.hasClass()  // will return 'true or 'false'. 'true' if the selected element has a matching class that is specified: 
+	if($('p').hasClass('styleSpecific')){
+		// perform work 
+	}
+
+// 3.
+	.removeClass()  // can either remove all classes off of the node or it can remove a single class 
+	$('p').removeClass('classOne classTwo'); // will remove given 2 classes from paragraph. Old way is document.getElementByTagName not preferable 
+
+	// Remove all class attributes from matching selectors:
+	$('p').removeClass();
+	//Example: 
+	$(document).ready(function(){
+		$('input[type="text"]').addClass('Highlight');
+		$('#LastNameTextBox').removeClass('Highlight');
+	});
+
+// 4.
+	.toggleClass(); // turns a class 'on' and 'off' based on is it there or not. Alternates adding or removing a class based on the current presence or absence of the class: Extremely useful with things like hovering over items tip: use it with 'if' statement 
+	$('#PhoneDetails').toggleClass('highlight');
+	<style type="text/css">
+		.highlight{background: yellow;}
+	</style> 
+	// Example:
+	function Focus(textbox){
+	$(textbox).toggleClass('Highlight');
+	}
+	function Blur(textbox){
+		$(textbox).toggleClass('Highlight');
+	}
+
+	// OR - you could set FocusBlur on the raw HTML and use single function instead . Change Focus & Blur to FocusBlur to use this function
+	function FocusBlur (textbox){
+		$(textbox).toggleClass('Highlight');
+	}
+
+
+
 
 
 
