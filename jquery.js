@@ -108,10 +108,10 @@ $(document).ready(function(){
 $(document).ready(function(){  // jQuery allows to chain different functions together, instead of having to iterate through theses over and over we are doing it all in one shot.
 	$('#formBox')
 	.attr(
-			{
-				title: 'Some title 4'
-			}
-		)
+		{
+		title: 'Some title 4'
+		}
+	)
 	.css('background-color', 'yellow')
 	.css('color', 'black')
 	.css('font-size', '20pt');
@@ -165,7 +165,6 @@ $('<div style="background-color: orange">Appended div Child 2 </div>').appendTo(
 	<div class="US_State">
 		<div class="state">Arizona</div>
 	</div> 
- 
 
 // Wrap method
 // .wrap each <span> has its own <div> wrapper 
@@ -236,10 +235,10 @@ $(document).ready(function(){
 $(document).ready(function(){  
 	$('#formBox')
 	.attr(
-			{
-				title: 'Some title 4'
-			}
-		)
+		{
+			title: 'Some title 4'
+		}
+	)
 	.css('background-color', 'yellow')
 	.css('color', 'black')
 	.css('font-size', '20pt');
@@ -249,10 +248,10 @@ $(document).ready(function(){
 $(document).ready(function(){ 
 	$('#formBox')
 	.attr(
-			{
-				title: 'Some title 4'
-			}
-		)
+		{
+			title: 'Some title 4'
+		}
+	)
 	.css({
 	'background-color': 'yellow',
 	'color': 'black',
