@@ -25,17 +25,17 @@ var checkJQ = setInterval(function() {
 */
 
 $(document).ready(function(){
-	var output = $('#OutputDiv'); //we were updating HTML of that particular object, means it has to touch the DOM every time it loops through. 
+	var output = $('#OutputDiv'); //updating HTML of that particular object, meaning it has to touch the DOM every time it loops through. 
 	$('#DataTable th').each(function(index){
 		output.html(output.html() + "<br />" + index + " " + $(this).text());
 	});
 });
 
-// instead of a way above use the method below 
+// instead of the way shown above use the method below 
 $(document).ready(function(){
 	var html = ''; // set it an empty string in order not to get 'undefined'
 	$('#DataTable th').each(function(index){
-        html += "<br />"+index+" "+ $(this).text(); //that's why we built up obbur string first as we loop through grab text & index 
+        html += "<br />"+index+" "+ $(this).text(); //that's why we built up our string first as we loop through grab text & index 
 	});
 	var output = $('#OutputDiv');
 	output.html(html); //and once our string is built up we assign that to the HTML property.  
@@ -128,7 +128,7 @@ $(document).ready(function(){  // jQuery allows to chain different functions tog
 // Appending adds children at the end of the matching elements 
  
  $('<span>(office)</span>').appendTo('.officePhone');  //better than document.createElement 
- OR (Both has the same functionality)
+//  OR (Both has the same functionality)
  $('.officePhone').append('<span>(office)</span>'); // preferable way 
 // Would result in (office) being added into each    .officePhone class element 
  
